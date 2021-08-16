@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import data
 
 app = Flask(__name__)
 
@@ -10,8 +11,9 @@ def index():
 
 
 @app.route('/servers')
-def second():
-    return render_template('servers.html')
+def servers():
+    return render_template('servers.html', servers=data.test_get_servers())
+
 
 if __name__ == '__main__':
     app.run(debug=True)
