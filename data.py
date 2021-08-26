@@ -33,6 +33,7 @@ def test_get_servers():
     servers.append(Server(name='Test4', ipaddr='0.0.0.0', status='Active', load=33))
     servers.append(Server(name='Test5', ipaddr='5.5.5.5', status='Offline', load=10))
     servers.append(Server(name='Test6', ipaddr='1.2.1.4', status='Active', load=15))
+    servers.append(Server(name='Test7', ipaddr='9.2.1.4', status='Error', load=99))
 
     return servers
 

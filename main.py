@@ -14,6 +14,10 @@ def index():
 def servers():
     return render_template('servers.html', servers=data.test_get_servers())
 
+@app.route('/streams')
+def streams():
+    return render_template('servers.html', servers=data.test_get_servers())
+
 
 if __name__ == '__main__':
     app.run(debug=True)
